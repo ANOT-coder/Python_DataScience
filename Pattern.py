@@ -99,3 +99,60 @@ pattern(5)'''
             print('*',end=" ")
         print()
 pattern(4)'''
+
+
+#21 Alphabet triangle
+'''def pattern(n):
+    alpha=['A','B','C','D']
+    for i in range(1,n):
+        for j in range(i):
+            print(alpha[j],end=" ")
+        print()
+pattern(5)
+'''
+#or
+'''def pattern(n):
+    
+    for i in range(1,n):
+        for j in range(i):
+            print(chr(64+i),end=" ")
+        print()
+pattern(5)'''
+
+
+#22 Repeating alphabet Triangle
+'''def pattern(n):
+    for i in range(1,n):
+        for j in range(i):
+            print(chr(65+j),end=" ")
+            
+        print()
+pattern(5)'''
+
+
+#23 Continuous Alphabet Pattern 
+'''def pattern(n):
+    num=0
+    for i in range(1,n):
+        for j in range(i):
+            print(chr(num+65),end=" ")
+            num+=1
+        print()
+pattern(5)'''
+
+#24 Reverse Alphabet Pattern 
+def pattern(n):
+    for i in range(n,-1,-1):
+        for j in range(i,n):
+            print(chr(j+65),end=' ')
+        print()
+pattern(4)
+
+
+#25 Inverted  Alphabet Pyramid
+'''def pattern(n):
+    for i in range(n-1,0,-1):
+        for j in range(i-1,-1,-1):
+            print(chr(j+65),end=" ")
+        print()
+pattern(5)'''
